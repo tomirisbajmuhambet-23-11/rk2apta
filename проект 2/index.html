@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Кітапхана жүйесі</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>Кітапхана</h1>
+      <p>Онлайн кітап іздеу және брондау жүйесі</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="search">
+      <input id="q" placeholder="Кітап, автор немесе жанр бойынша іздеу...">
+      <button id="searchBtn">Іздеу</button>
+      <button id="allBtn">Барлығын көрсету</button>
+    </section>
+
+    <section id="books" class="grid"></section>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h3 id="mTitle">Кітапты брондау</h3>
+      <p id="mInfo"></p>
+      <label>Аты-жөнің: <input id="u_name" type="text"></label>
+      <label>Телефон: <input id="u_phone" type="text"></label>
+      <div class="actions">
+        <button id="confirm">Растау</button>
+        <button id="close">Жабу</button>
+      </div>
+      <p id="mMsg" class="msg"></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Кітапхана. Барлық құқықтар қорғалған.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
