@@ -1,0 +1,13 @@
+[project]
+name = "student_utils"
+version = "0.1.0"
+description = "A simple utility package created for educational purposes."
+authors = [
+    {name = "Student Name", email = "student@example.com"}
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
